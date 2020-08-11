@@ -36,9 +36,11 @@ data class WirePath(val instructions: String) {
                     currentY -= distance
                 }
             }
-//            println(locations.joinToString(", ", "[", "]"))
+            println(locations.joinToString(", ", "[", "]"))
         }
     }
+
+//    fun getIntersections():
 
     fun getSortedLocations(): MutableSet<Pair<Int, Int>> {
         return locations.sortedWith(Comparator { a,b ->
